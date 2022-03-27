@@ -1,0 +1,25 @@
+wsl
+#generar la carpeta
+mkdir cajamarca22
+cd cajamarca22/
+cd cajamarca22/
+#crear espacio virtual
+python3 -m venv venv
+#activar el espacio virtual
+source venv/bin/activate
+#crear carpeta para ordenes
+export AIRFLOW_HOME='pwd'/airflow
+#no exportar ejemplos
+export AIRFLOW__CORE__LOAD_EXAMPLES=false
+##revisar en visual 
+#instalar apache airflow
+pip install apache-airflow
+#crear la base
+airflow db init
+#crear usuario
+airflow users create --role Admin --username jennifer --email jennifermadeley@gmail.com --firstname jennifer --lastname madeley --password jeny22
+#Inicializar el seridor web.
+airflow webserver -D
+#ingresar a localhost7980: (llenar los datos)
+#mostrar la informacion
+airflow scheduler
