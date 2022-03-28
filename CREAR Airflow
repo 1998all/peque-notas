@@ -1,0 +1,48 @@
+wsl
+#instalaciones
+sudo apt-get install software-properties-common
+sudo apt-add-repository universe
+sudo apt-get update
+python3 --version
+export SLUGIFY_USES_TEXT_UNICODE=yes
+sudo pip install SQLAlchemy==1.2.24
+sudo pip install SQLAlchemy==1.3.24
+sudo pip install apache-airflow
+airflow version
+airflow
+#iniciar airflow
+airflow db init
+#crear usuario
+ airflow users create --role Admin --username alejandrina --email alejandrinacajamarca98@gmail.com --firstname alejandrinac --lastname cajamarca --password Estudios17
+
+#abrir el sevidor
+airflow webserver -D
+
+
+
+
+#crear un documento:
+mkdir ensayowsl
+#ubicarlo en el directorio
+cd ensayo/
+
+#instalar python3
+sudo apt install python3-venv
+#crear espacio virtual
+python3 -m venv venv
+#activar espacio virtual
+source venv/bin/activate
+
+#limpiar el relajo 
+clear
+#
+
+#crear una carpeta para ordenes
+export AIRFLOW_HOME='pwd'/airflow
+
+#no esportar ejemplos predeterminados
+export AIRFLOW_CORE_LOAD_EXAMPLES=false
+
+
+#INSTALAR APACHE
+pip install apache-airflow
