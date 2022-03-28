@@ -8,6 +8,10 @@ cd cajamarca22/
 sudon python3 get-pip.py
 pip install virtualenv
 
+##trabajar sin cuenta:
+sudo su
+
+
 #crear espacio virtual
 python3 -m venv venv
 #activar el espacio virtual
