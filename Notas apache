@@ -26,7 +26,7 @@ pip install apache-airflow
 #crear la base
 airflow db init
 #crear usuario
-airflow users create --role Admin --username jennifer --email jennifermadeley@gmail.com --firstname jennifer --lastname madeley --password jeny22
+airflow users create --role Admini --username admini --email adminilol@gmail.com --firstname admi --lastname madeley --password adminirr
 #Inicializar el seridor web.
 airflow webserver -D
 #ingresar a localhost7980: (llenar los datos)
