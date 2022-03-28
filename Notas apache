@@ -3,6 +3,11 @@ wsl
 mkdir cajamarca22
 cd cajamarca22/
 cd cajamarca22/
+#instalar pip
+
+sudon python3 get-pip.py
+pip install virtualenv
+
 #crear espacio virtual
 python3 -m venv venv
 #activar el espacio virtual
