@@ -53,7 +53,7 @@ airflow version
 airflow db init
 
 # creacion del usuario para login
-airflow users  create --role Admin --username ameliapastel --email ameliapastel@email.com --firstname amelia --lastname pastel --password pastelito
+airflow users  create --role Admin --username pastelito --email laameliapastel@email.com --firstname ameliap --lastname pastelessi --password pastelitoconmiel
 
 # iniciar el servicio de airflow
 airflow webserver -p 7890
