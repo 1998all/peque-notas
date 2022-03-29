@@ -1,0 +1,77 @@
+  wsl
+  #crear una direccion
+  mkdir carpeta/
+  #declarar
+  cd carpeta/
+  #declara entorno virtual
+  python3 -m venv venv
+  ls
+  #activar 
+  source venv/bin/activate
+#limpiar clear
+export AIRFLOW_HOME='pwd'/airflow
+export AIRFLOW_CORE_LOAD_EXAMPLES=false
+#INSTALAR APACHE
+pip install apache-airflow
+pip3 install "apache-airflow==2.2.3" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.2.3/constraints-no-providers-3.8.txt"
+airflow users create --role Admin --username administ --email adminilooill@gmail.com --firstname admir --lastname madeleyju --password adminirrcfcg
+
+
+
+
+
+
+///rutina
+# instalacion de properties-common
+sudo apt-get install software-properties-common 
+
+# add-repository universe
+sudo apt-add-repository universe 
+
+# add-repository universe
+sudo apt-get update 
+
+# revision version python
+python3 --version
+
+# instalacion pip
+sudo apt-get install python3-pip 
+
+# exportar variable
+export SLUGIFY_USES_TEXT_UNIDECODE=yes 
+
+# instalacion sql alquemy compatible con airflow 2.20
+sudo pip install SQLAlchemy==1.3.24
+
+# instalacion airflow 
+sudo pip install apache-airflow 
+
+# revision version airflow
+airflow version
+
+# inicializacion de la base de datos
+airflow db init
+
+# creacion del usuario para login
+airflow users  create --role Admin --username jorgecardona --email jorgecardona@email.com --firstname jorge --lastname cardona --password jorgecardona
+
+# iniciar el servicio de airflow
+airflow webserver -p 7890
+
+# iniciar el agendador de tareas
+airflow scheduler
+
+# iniciar sesion en la interface de airflow
+http://localhost:7890
+
+# imprime la lista de DAGs activos
+airflow dags list
+
+# imprime la lista de tareas del DAG  "tutorial" 
+airflow tasks list tutorial
+
+# prints the hierarchy of tasks in the "tutorial" DAG
+airflow tasks list tutorial --tree
+
+# repositorio github con el codigo para los DAGs
+https://github.com/JorgeCardona/skill...
